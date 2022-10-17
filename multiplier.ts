@@ -25,7 +25,7 @@ try {
     const { value1, value2 } = parseArguments(process.argv);
     multiplier(value1, value2, `Multiplied ${value1} and ${value2}. The result is:`);
 } catch (error: unknown) {
-    let errorMessage = 'Something bad happened!';
+    let errorMessage = 'Something bad happened';
     if (error instanceof Error) {
         errorMessage += ' Error: ' + error.message;
     }
