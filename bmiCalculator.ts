@@ -18,9 +18,9 @@ const parseBmiArguments = (args: Array<string>): BmiValues => {
 };
 
 const bmiChecker = (weight: number, height: number, printText: string) => {
-    const heightInMeters = height / 100;
-    const bmi = weight / (heightInMeters * heightInMeters);
-    const rounded = Math.round(bmi * 10) / 10;
+    const heightInMeters: number = height / 100;
+    const bmi: number = weight / (heightInMeters * heightInMeters);
+    const rounded: number = Math.round(bmi * 10) / 10;
     console.log(rounded);
 
     if (rounded <= 18.5) console.log(printText, 'You are underweight.');
